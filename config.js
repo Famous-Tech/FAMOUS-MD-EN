@@ -17,7 +17,7 @@ module.exports = {
   RMBG_KEY: process.env.RMBG_KEY || false,
   BRANCH: "main",
   WARN_COUNT: 3,
-  PACKNAME: process.env.PACKNAME || "X-Asena",
+  PACKNAME: process.env.PACKNAME || "ULTIMATE-XMD",
   WELCOME_MSG: process.env.WELCOME_MSG || "Hello @user Welcome to @gname, Glad to meet you\nwelcome By ULTIMATE-XMD",
   GOODBYE_MSG: process.env.GOODBYE_MSG || "Bye @user\nGOODBYE BY ULTIMATE-XMD",
   AUTHOR: process.env.AUTHOR || "FAMOUS-TECH",
