@@ -1,5 +1,5 @@
 {
-  "name": "x-asena",
+  "name": "ULTIMATE-XMD",
   "version": "2.0.1",
   "description": "Whatsapp Bot",
   "main": "index.js",
@@ -40,12 +40,12 @@
     "x-asena": "^1.0.1"
   },
   "scripts": {
-    "start": "pm2 start index.js --name x-asena && pm2 logs x-asena",
+    "start": "pm2 start index.js --name ultimate-xmd && pm2 logs ultimate-xmd",
     "code": "node lib/pcode.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/X-Electra/X-Asena.git"
+    "url": "git+https://github.com/Famous-Tech/ULTIMATE-XMD.git"
   },
   "keywords": [
     "bot",
@@ -54,9 +54,9 @@
   "author": "Neeraj-x0",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/X-Electra/X-Asena/issues"
+    "url": "https://github.com/Famous-Tech/ULTIMATE-XMD/issues"
   },
-  "homepage": "https://github.com/X-Electra/X-Asena#readme",
+  "homepage": "https://github.com/Famous-Tech/ULTIMATE-XMD#readme",
   "devDependencies": {
     "@eslint/js": "^9.4.0",
     "eslint": "^9.4.0",
