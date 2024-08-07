@@ -17,9 +17,9 @@ module.exports = {
   RMBG_KEY: process.env.RMBG_KEY || false,
   BRANCH: "main",
   WARN_COUNT: 3,
-  PACKNAME: process.env.PACKNAME || "ULTIMATE-XMD",
-  WELCOME_MSG: process.env.WELCOME_MSG || "Hello @user Welcome to @gname, Glad to meet you\nwelcome By ULTIMATE-XMD",
-  GOODBYE_MSG: process.env.GOODBYE_MSG || "Bye @user\nGOODBYE BY ULTIMATE-XMD",
+  PACKNAME: process.env.PACKNAME || "FAMOUS-MD",
+  WELCOME_MSG: process.env.WELCOME_MSG || "Hello @user Welcome to @gname",
+  GOODBYE_MSG: process.env.GOODBYE_MSG || "Bye @user\nGOODBYE ",
   AUTHOR: process.env.AUTHOR || "FAMOUS-TECH",
   SUDO:
     process.env.SUDO || "50943782508,919598157259,918590508376,919383400679",
