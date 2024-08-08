@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/Famous-Tech/ULTIMATE-XMD.git /xasena
+RUN git clone https://github.com/Famous-Tech/FAMOUS-MD.git /xasena
 WORKDIR /xasena
 RUN npm install
 CMD ["node", "index.js"]
