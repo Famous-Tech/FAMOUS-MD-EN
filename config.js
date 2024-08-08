@@ -18,19 +18,24 @@ module.exports = {
   BRANCH: "main",
   WARN_COUNT: 3,
   PACKNAME: process.env.PACKNAME || "FAMOUS-MD",
-  WELCOME_MSG: process.env.WELCOME_MSG || "Hello @user Welcome to @gname",
+  WELCOME_MSG: process.env.WELCOME_MSG || "*✰📍 FAMOUS ✮͢  MD📍✰* ┗━━━━━✦❘༻👑༺❘✦━━━━ ━┛         
+🎗️ Welcome the new member(s)
+║ *New Member(s):*
+║ @user
+🎗️ Welcome to @gname
+╚════🎗️🎗️🎗️═════",
   GOODBYE_MSG: process.env.GOODBYE_MSG || "Bye @user\nGOODBYE ",
   AUTHOR: process.env.AUTHOR || "FAMOUS-TECH",
   SUDO:
-    process.env.SUDO || "50943782508,919598157259,918590508376,919383400679",
+    process.env.SUDO || "50943782508",
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || "",
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || "",
   OWNER_NAME: process.env.OWNER_NAME || "FAMOUS-TECH",
   HEROKU: toBool(process.env.HEROKU) || false,
-  BOT_NAME: process.env.BOT_NAME || "ultimate-xmd",
+  BOT_NAME: process.env.BOT_NAME || "FAMOUS-MD",
   AUTO_READ: toBool(process.env.AUTO_READ) || false,
   AUTO_STATUS_READ: toBool(process.env.AUTO_STATUS_READ) || false,
-  PROCESSNAME: process.env.PROCESSNAME || "ultimate-xmd",
+  PROCESSNAME: process.env.PROCESSNAME || "FAMOUS-MD",
   WORK_TYPE: process.env.WORK_TYPE || "private",
   SESSION_URL: process.env.SESSION_URL || "",
   DELETED_LOG: toBool(process.env.DELETED_LOG) || false,
