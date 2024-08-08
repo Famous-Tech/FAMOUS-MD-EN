@@ -40,7 +40,7 @@
     "x-asena": "^1.0.1"
   },
   "scripts": {
-    "start": "pm2 start index.js --name ultimate-xmd && pm2 logs ultimate-xmd",
+    "start": "pm2 start index.js --name famous-md && pm2 logs famous-md",
     "code": "node lib/pcode.js"
   },
   "repository": {
