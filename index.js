@@ -23,7 +23,7 @@ const readAndRequireFiles = async (directory) => {
 };
 
 async function initialize() {
-  console.log("X-Asena");
+  console.log("Starting FAMOUS-MD");
   try {
     if (config.SESSION_ID && !fs.existsSync("session")) {
       console.log("loading session from session id...");
