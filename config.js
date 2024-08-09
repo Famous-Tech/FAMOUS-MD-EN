@@ -3,11 +3,12 @@ const fs = require("fs");
 require("dotenv").config();
 const toBool = (x) => x === "true";
 const DATABASE_URL = process.env.DATABASE_URL || "./assets/database.db";
+
 module.exports = {
   ANTILINK: toBool(process.env.ANTI_LINK) || false,
   LOGS: toBool(process.env.LOGS) || true,
   ANTILINK_ACTION: process.env.ANTI_LINK || "delete",
-  SESSION_ID: process.env.SESSION_ID ||null,
+  SESSION_ID: process.env.SESSION_ID || null,
   LANG: process.env.LANG || "EN",
   AUTH_TOKEN: "",
   HANDLERS:
@@ -18,12 +19,7 @@ module.exports = {
   BRANCH: "main",
   WARN_COUNT: 3,
   PACKNAME: process.env.PACKNAME || "FAMOUS-MD",
-  WELCOME_MSG: process.env.WELCOME_MSG || "*✰📍 FAMOUS ✮͢  MD📍✰* ┗━━━━━✦❘༻👑༺❘✦━━━━ ━┛         
-🎗️ Welcome the new member(s)
-║ *New Member(s):*
-║ @user
-🎗️ Welcome to @gname
-╚════🎗️🎗️🎗️═════",
+  WELCOME_MSG: process.env.WELCOME_MSG || "*✰📍 FAMOUS ✮͢  MD📍✰* \n┗━━━━━✦❘༻👑༺❘✦━━━━ ━┛         \n🎗️ Welcome the new member(s)\n║ *New Member(s):*\n║ @user\n🎗️ Welcome to @gname\n╚════🎗️🎗️🎗️═════╝",
   GOODBYE_MSG: process.env.GOODBYE_MSG || "Bye @user\nGOODBYE ",
   AUTHOR: process.env.AUTHOR || "FAMOUS-TECH",
   SUDO:
