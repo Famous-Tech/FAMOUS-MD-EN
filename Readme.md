@@ -1,133 +1,69 @@
-# X-Asena Bot
+ 
 
-X-Asena is a powerful and versatile WhatsApp bot built using Node.js and the Baileys library. This bot offers a wide range of features and capabilities, making it an excellent choice for both personal and commercial use cases.
+<h1 align="center">FAMOUS-MD<br></h1>
+<p align="center">
+<img src="https://telegra.ph/file/a2e5d1851171e21e7ba82.jpg"/>
+</p>
 
-[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%203.svg)](https://www.digitalocean.com/?refcode=9db4c65bb8ee&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+<p align="center">
+FAMOUS-MD 𝘽𝙤𝙩 Multi Device is a whatsapp bot created by <a href="https://github.com/Samu-el1" target="_blank">FAMOUS-TECH</a> using <a href="https://github.com/adiwajshing/Baileys" target="_blank">Baileys</a> and <a href="https://github.com/nodejs" target="_blank">Nodejs</a>. Dont forget to give a star bro.
+</p>
 
-🚀 Deploy your X-Asena Bot on DigitalOcean and get $200 in free credits! Click the badge above to sign up and take advantage of this amazing offer. DigitalOcean's reliable and scalable cloud infrastructure ensures your bot runs smoothly, no matter how many users you have. Don't miss out on this opportunity to supercharge your WhatsApp experience!
 
-## Table of Contents
 
-- [Installation](#installation)
-  - [Prerequisites](#prerequisites)
-  - [Deploy on Any Shell (Including Termux)](#deploy-on-any-shell-including-termux)
-- [Usage](#usage)
-  - [Creating a Plugin](#creating-a-plugin)
-  - [Sending Messages](#sending-messages)
-    - [Replying](#replying)
-    - [Media](#media)
-    - [Sticker](#sticker)
-  - [External Plugins](#external-plugins)
-- [Community and Support](#community-and-support)
-- [Credits](#credits)
-- [License](#license)
+------
 
-## Installation
+# ```Bot Info```
+<p align="center">
+<a href="https://github.com/Famous-Tech/followers"><img title="Followers" src="https://img.shields.io/github/followers/Famous-Tech?color=red&style=flat-square"></a>
+<a href="https://github.com/Famous-Tech/FAMOUS-MD-EN/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Famous-Tech/FAMOUS-MD-EN?color=blue&style=flat-square"></a>
+<a href="https://github.com/Famous-Tech/FAMOUS-MD-EN/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Famous-Tech/FAMOUS-MD-EN?color=red&style=flat-square"></a>
+<a href="https://github.com/Famous-Tech/FAMOUS-MD/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Famous-Tech/FAMOUS-MD?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/Famous-Tech/FAMOUS-MD-EN"><img title="Open Source" src="https://img.shields.io/badge/Author-Classic%20Bot%20Inc.-red?v=103"></a>
+<a href="https://github.com/Famous-Tech/FAMOUS-MD-EN/"><img title="Size" src="https://img.shields.io/github/repo-size/Famous-Tech/FAMOUS-MD-EN?style=flat-square&color=green"></a>
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Samue-l1%2FClassic-v3-BUG&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
+<a href="https://github.com/Famous-Tech/FAMOUS-MD-EN/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
+</p>
+<p align='center'>
+    </p>
 
-### Prerequisites
+------
 
-Before installing X-Asena, ensure that you have the following dependencies installed on your system:
 
-- FFmpeg
-- Node.js
+## ```Bot Support Group Chats```
 
-### Deploy on Any Shell (Including Termux)
+- [`GC`](https://chat.whatsapp.com/ETsxysQPYXxG1P8JQ1RQHV)
+- [`Channel`](https://whatsapp.com/channel/0029VaaqaSp0LKZDuwe5SI3e)
 
-To deploy X-Asena on any shell, including Termux, follow these steps:
 
-1. Fork the X-Asena repository
-2. Edit the `config.js` file with your desired configuration details
-3. Install the required dependencies by running the following commands:
-   - `npm install`
-   - `npm install qrcode-terminal`
-   - `npm install pm2 -g`
-4. To scan the QR code and start the bot, run `npm start`
-5. To connect using a pairing code, run `npm run code`. After pairing, run `npm start` again and scan the QR code
-6. country code is require for connecting via pairing code. If you are from India, you can use `91` as country code. If you are from any other country, you can use your country code.
-7. To stop the bot, press `Ctrl+C`
-8. To start the bot, run `npm start` 
 
-## Usage
+# Setup For Deployment 👇
 
-### Creating a Plugin
+- FORK THE REPOSITORY [`Here`](https://github.com/Famous-Tech/FAMOUS-MD-EN/fork)
 
-X-Asena supports custom plugins, which can be created using the following template:
+## `Generate Pair Code For Session`
 
-```javascript
-const { command, isPrivate } = require("../../lib/");
+[`get your SESSION ID here`](https://classic-v3-session.onrender.com)
 
-command({
-  pattern: "ping", // Command pattern
-  fromMe: isPrivate, // Need to respond for everyone's message? true: only from sudo numbers, false: from everyone, isPrivate: same as false but will be considered as true if worktype is private
-  desc: "To check ping", // Description of the command
-  type: "user", // Command type
-}, async (message, match) => {
-  /* PLUGIN CONTENT HERE */
-});
+
+#### DEPLOY TO RENDER
+
+ ★ Register To Render 
+    <br>
+<a href='https://dashboard.render.com/register' target="_blank"><img alt='Render' src='https://img.shields.io/badge/CREATE-h?color=black&style=for-the-badge&logo=render' width="96.35" height="28"/></a></p>
+
+★ Now Deploy
+    <br>
+<a href='https://dashboard.render.com/select-repo?type=web' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/DEPLOY -h?color=black&style=for-the-badge&logo=render' width="96.35" height="28"/></a></p>
+
+
+## DEPLOY ON TERMUX
 ```
-
-### Sending Messages
-
-#### Replying
-
-To reply to a message, use the following code:
-
-```javascript
-message.reply("Hi");
-```
-
-#### Media
-
-To send media (image, audio, or video), use the following code:
-
-```javascript
-let content = "https://wallpaperaccess.com/full/5531321.jpg"; // Can also use a buffer
-message.sendMessage(jid, content, {} /* options */, "image" /* change to 'audio' or 'video' when sending audio or video */);
-```
-
-#### Sticker
-
-To send a sticker, use the following code:
-
-```javascript
-message.sendMessage(jid, "url or buffer of image or video (max 10 seconds)", { packname: config.PACKNAME, author: config.AUTHOR }, "sticker");
-```
-
-### External Plugins
-
-X-Asena supports external plugins. You can find more information about external plugins in the [Plugins wiki](https://github.com/X-Electra/X-Asena/wiki/Plugins).
-
-## Community and Support
-
-Join the official WhatsApp group for X-Asena to get support, ask questions, and interact with other users:
-
-[![JOIN WHATSAPP GROUP](https://raw.githubusercontent.com/Neeraj-x0/Neeraj-x0/main/photos/suddidina-join-whatsapp.png)](https://chat.whatsapp.com/DJYrdBENyX33MRppEFPxV6)
-
-
-## License
-
-X-Asena is licensed under the [MIT License](https://opensource.org/licenses/MIT):
-
-```
-MIT License
-
-Copyright (c) 2023 X-Electra
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+apt update
+apt upgrade
+pkg update && pkg upgrade
+pkg install git -y
+pkg install nodejs -y 
+pkg install ffmpeg -y 
+pkg install wget
+git clone (your url)
