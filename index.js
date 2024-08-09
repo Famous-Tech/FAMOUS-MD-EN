@@ -25,11 +25,11 @@ const readAndRequireFiles = async (directory) => {
 async function initialize() {
   console.log("Starting FAMOUS-MD");
   try {
-    if (config.SESSION_ID && !fs.existsSync("session")) {
+    if (config.SESSION_ID && !(await fs.stat("session").catch(() => false))) {
       console.log("loading session from session id...");
-      fs.mkdirSync("./session");
+      await fs.mkdir("./session");
       const credsData = await loadSession(config.SESSION_ID);
-      fs.writeFileSync(
+      await fs.writeFile(
         "./session/creds.json",
         JSON.stringify(credsData.creds, null, 2)
       );
