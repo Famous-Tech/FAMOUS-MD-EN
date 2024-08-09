@@ -43,10 +43,10 @@ FAMOUS-MD 𝘽𝙤𝙩 Multi Device is a whatsapp bot created by <a href="https:
 
 ## `Generate Pair Code For Session`
 
-[`get your SESSION ID here`](https://classic-v3-session.onrender.com)
+[`get your SESSION ID here`](https://famousmdpair.onrender.com/)
 
 
-#### DEPLOY TO RENDER
+#### DEPLOY TO RENDER ( don't work  sorry 😞 )
 
  ★ Register To Render 
     <br>
@@ -67,3 +67,9 @@ pkg install nodejs -y
 pkg install ffmpeg -y 
 pkg install wget
 git clone (your url)
+cd FAMOUS-MD-EN
+npm install
+npm install pm2 -g
+npm install qrcode-terminal
+npm start
+```
