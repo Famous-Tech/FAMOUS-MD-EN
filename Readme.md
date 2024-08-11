@@ -2,11 +2,11 @@
 
 <h1 align="center">FAMOUS-MD<br></h1>
 <p align="center">
-<img src="https://telegra.ph/file/a2e5d1851171e21e7ba82.jpg"/>
+<img src="https://telegra.ph/file/1d083f2cc089db688a191.jpg"/>
 </p>
 
 <p align="center">
-FAMOUS-MD 𝘽𝙤𝙩 Multi Device is a whatsapp bot created by <a href="https://github.com/Samu-el1" target="_blank">FAMOUS-TECH</a> using <a href="https://github.com/adiwajshing/Baileys" target="_blank">Baileys</a> and <a href="https://github.com/nodejs" target="_blank">Nodejs</a>. Dont forget to give a star bro.
+FAMOUS-MD 𝘽𝙤𝙩 Multi Device is a whatsapp bot created by <a href="https://github.com/Famous-Tech" target="_blank">FAMOUS-TECH</a> using <a href="https://github.com/adiwajshing/Baileys" target="_blank">Baileys</a> and <a href="https://github.com/nodejs" target="_blank">Nodejs</a>. Dont forget to give a star bro.
 </p>
 
 
