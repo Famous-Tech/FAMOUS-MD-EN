@@ -1,9 +1,10 @@
 node_modules/
 session/
 .env
-
+# Famous-Tech : FAMOUS-MD
 # Ignore the build directory
 
 assets/plugins/eval.js
 assets/database/store.json
 assets/database.db
+
