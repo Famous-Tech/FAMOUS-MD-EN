@@ -4,10 +4,15 @@ const config = require("./config");
 const connect = require("./lib/connection");
 const io = require("socket.io-client");
 const { getandRequirePlugins } = require("./assets/database/plugins");
-const readline = require('readline');
-const { default: makeWASocket, generatePairingCode } = require('@whiskeysockets/baileys');
+const { parsePhoneNumber } = require("libphonenumber-js");
+const readline = require("readline");
 
 global.__basedir = __dirname; // Set the base directory for the project
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
 
 const readAndRequireFiles = async (directory) => {
   try {
@@ -23,31 +28,38 @@ const readAndRequireFiles = async (directory) => {
   }
 };
 
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+async function requestPhoneNumber() {
+  return new Promise((resolve) => {
+    rl.question("Please enter your WhatsApp number (e.g., +2348108395270): ", (number) => {
+      resolve(number);
+    });
+  });
+}
 
-const question = (text) => new Promise((resolve) => rl.question(text, resolve));
+async function getUserPhoneNumber() {
+  let phoneNumber = config.Usernumber || process.env.Usernumber;
+
+  if (!phoneNumber) {
+    phoneNumber = await requestPhoneNumber();
+  }
+
+  const parsedNumber = parsePhoneNumber(phoneNumber);
+  if (!parsedNumber.isValid()) {
+    console.error("Invalid phone number. Please ensure it includes the country code.");
+    process.exit(1);
+  }
+
+  return parsedNumber.number;
+}
 
 async function initialize() {
   console.log("Starting FAMOUS-MD");
   try {
-    // Demander le numéro de téléphone de l'utilisateur
-    let phoneNumber = await question('Please enter your WhatsApp number (with country code, e.g., +50943782508): ');
-    phoneNumber = phoneNumber.replace(/[^0-9]/g, '');
+    const userPhoneNumber = await getUserPhoneNumber();
 
-    if (!phoneNumber.startsWith('+')) {
-        console.log('Invalid phone number format. Make sure it starts with the country code.');
-        process.exit(1);
-    }
-
-    const sock = makeWASocket();
-    
-    // Générer un code de pairing
-    let code = await sock.requestPairingCode(phoneNumber);
-    code = code?.match(/.{1,4}/g)?.join("-") || code;
-    console.log(`Your Pairing Code: ${code}`);
+    // Here we request a pairing code for the user number
+    const pairingCode = await connect.requestPairingCode(userPhoneNumber);
+    console.log(`Your Pairing Code: ${pairingCode.match(/.{1,4}/g).join('-')}`);
 
     await readAndRequireFiles(path.join(__dirname, "/assets/database/"));
     console.log("Syncing Database");
@@ -61,13 +73,12 @@ async function initialize() {
     const ws = io("https://socket.xasena.me/", { reconnection: true });
     ws.on("connect", () => console.log("Connected to server"));
     ws.on("disconnect", () => console.log("Disconnected from server"));
-    
-    rl.close();
-
     return await connect();
   } catch (error) {
     console.error("Initialization error:", error);
     return process.exit(1); // Exit with error status
+  } finally {
+    rl.close();
   }
 }
 
