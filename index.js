@@ -45,8 +45,7 @@ async function initialize() {
     console.log(`Using phone number: ${usernumber}`);
 
     // Request pairing code using the provided usernumber
-    const { requestPairingCode } = connectModule;
-    const pairingCode = await requestPairingCode(usernumber);
+    const pairingCode = await connectModule.requestPairingCode(usernumber);
     console.log(`Pairing code: ${pairingCode}`);
 
     await readAndRequireFiles(path.join(__dirname, "/assets/database/"));
