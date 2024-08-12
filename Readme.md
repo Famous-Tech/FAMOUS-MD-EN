@@ -19,7 +19,7 @@ FAMOUS-MD 𝘽𝙤𝙩 Multi Device is a whatsapp bot created by <a href="https:
 <a href="https://github.com/Famous-Tech/FAMOUS-MD-EN/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Famous-Tech/FAMOUS-MD-EN?color=blue&style=flat-square"></a>
 <a href="https://github.com/Famous-Tech/FAMOUS-MD-EN/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Famous-Tech/FAMOUS-MD-EN?color=red&style=flat-square"></a>
 <a href="https://github.com/Famous-Tech/FAMOUS-MD-EN/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Famous-Tech/FAMOUS-MD?label=Watchers&color=blue&style=flat-square"></a>
-<a href="https://github.com/Famous-Tech/FAMOUS-MD-EN"><img title="Open Source" src="https://img.shields.io/badge/Author-Classic%20Bot%20Inc.-red?v=103"></a>
+<a href="https://github.com/Famous-Tech/FAMOUS-MD-EN"><img title="Open Source" src="https://img.shields.io/badge/Author-FAMOUS-TECH%20Bot%20HAÏTI.-red?v=103"></a>
 <a href="https://github.com/Famous-Tech/FAMOUS-MD-EN/"><img title="Size" src="https://img.shields.io/github/repo-size/Famous-Tech/FAMOUS-MD-EN?style=flat-square&color=green"></a>
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Famous-Tech%2FAMOUS-MD-EN&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
 <a href="https://github.com/Famous-Tech/FAMOUS-MD-EN/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
