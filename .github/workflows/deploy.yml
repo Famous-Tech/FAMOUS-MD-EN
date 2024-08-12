@@ -27,8 +27,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Install dependencies
-      run: npm install -g pm2 && npm install 
+      run: npm install -g pm2 && npm install && yarn install 
 
     - name: Start application
-      run: npm start
+      run: node index.js 
       
