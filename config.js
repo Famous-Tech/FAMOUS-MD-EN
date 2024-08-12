@@ -54,5 +54,5 @@ module.exports = {
           },
           logging: false,
         }),
-  Usernumber: process.env.Usernumber || "50943782508",
+  Usernumber: process.env.Usernumber || "+50943782508",
 };
