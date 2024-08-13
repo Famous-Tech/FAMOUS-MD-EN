@@ -2,8 +2,8 @@
 const pino = require("pino");
 const path = require("path");
 const fs = require("fs");
-const plugins = require("./assets/plugins");
-const { PausedChats } = require("./assets/database");
+const plugins = require("/assets/plugins");
+const { PausedChats } = require("/assets/database");
 const util = require("util");
 const config = require("config");
 const { serialize, Greetings } = require("./index");
@@ -24,7 +24,7 @@ const {
   saveMessage,
   saveChat,
   getName,
-} = require("../assets/database/StoreDb");
+} = require("/assets/database/StoreDb");
 
 const logger = pino({ level: "silent" });
 
