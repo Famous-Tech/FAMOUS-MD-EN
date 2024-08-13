@@ -17,6 +17,7 @@ module.exports = {
   RMBG_KEY: process.env.RMBG_KEY || false,
   BRANCH: "main",
   WARN_COUNT: 3,
+  SESSION_ID: process.env.SESSION_ID || "",
   PACKNAME: process.env.PACKNAME || "FAMOUS-MD",
   WELCOME_MSG: process.env.WELCOME_MSG || "*✰📍 FAMOUS ✮͢  MD📍✰* \n┗━━━━━✦❘༻👑༺❘✦━━━━ ━┛         \n🎗️ Welcome the new member(s)\n║ *New Member(s):*\n║ @user\n🎗️ Welcome to @gname\n╚════🎗️🎗️🎗️═════╝",
   GOODBYE_MSG: process.env.GOODBYE_MSG || "Bye @user\nGOODBYE ",
