@@ -27,7 +27,7 @@ Description: ${i.desc}\`\`\``);
     } else {
       let { prefix } = message;
       let [date, time] = new Date()
-        .toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })
+        .toLocaleString("en-IN", { timeZone: "America/Port-au-Prince" })
         .split(",");
       let menu = `╭━━━━━ᆫ ${BOT_NAME} ᄀ━━━
 ┃ ⎆  *OWNER*:  ${OWNER_NAME}
@@ -36,7 +36,9 @@ Description: ${i.desc}\`\`\``);
 ┃ ⎆  *DATE*: ${date}
 ┃ ⎆  *TIME*: ${time}
 ┃ ⎆  *COMMANDS*: ${plugins.commands.length} 
-┃ ⎆  *UPTIME*: ${clockString(process.uptime())} 
+┃ ⎆  *UPTIME*: ${clockString(process.uptime())}
+┃ ⎆  *DEV* : FAMOUS-TECH 
+┃ ⎆  *MADE IN HAÏTI* 🇭🇹
 ╰━━━━━━━━━━━━━━━\n`;
       let cmnd = [];
       let cmd;
