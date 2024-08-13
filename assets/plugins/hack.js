@@ -6,66 +6,42 @@ command({
   desc: "hacking Prank", // Description of the command
   type: "user", // Command type
 }, async (message, match) => {
-  const {
-    smd,
-    prefix, 
-    Config ,
-    sleep
-     } = require('../lib')
+  const { sleep } = require('../lib');
 
+  await message.sendMessage("Injecting Malware");   
+  await sleep(2000);    
+  await message.sendMessage(" 😈█ 10%");    
+  await sleep(1000);    
+  await message.sendMessage(" 😈 █ █ 20%");    
+  await sleep(1000);    
+  await message.sendMessage(" 😈█ █ █ 30%");    
+  await sleep(1000);    
+  await message.sendMessage(" 😈█ █ █ █ 40%");    
+  await sleep(1000);    
+  await message.sendMessage(" 😈█ █ █ █ █ 50%");    
+  await sleep(1000);    
+  await message.sendMessage(" 😈█ █ █ █ █ █ 60%");    
+  await sleep(1000);    
+  await message.sendMessage(" 😈█ █ █ █ █ █ █ 70%");    
+  await sleep(1000);    
+  await message.sendMessage(" 😈█ █ █ █ █ █ █ █ 80%");    
+  await sleep(1000);    
+  await message.sendMessage(" 😈█ █ █ █ █ █ █ █ █ 90%");    
+  await sleep(1000);    
+  await message.sendMessage(" 😈█ █ █ █ █ █ █ █ █ █ 100%");    
+  await sleep(1000);    
+  await message.sendMessage(" 😈System hacking on process... \n Connecting to Server error to find 404");    
+  await sleep(1000);    
+  await message.sendMessage("😈Device successfully connected... \n Receiving data...");    
+  await sleep(1000);    
+  await message.sendMessage("😈Data hacked from device 100% completed \n Killing all evidence killing all malwares...");
+  await sleep(1000);    
+  await message.sendMessage(" 😈HACKING COMPLETED ");    
+  await sleep(2000);    
+  await message.sendMessage(" 😈SENDING LOG DOCUMENTS...");    
+  await sleep(1000);
+  await message.sendMessage(" 😈 *SUCCESSFULLY SENT DATA AND Connection disconnected*");    
+  await sleep(1000);
 
-
-
-
-
-
-smd({
-    cmdname: "hack",    
-    type: "fun",    
-    info: "hacking prank",    
-    filename: __filename,
-
-},
-
-async(citel) => {    
-await citel.send("Injecting Malware")   
-await sleep(2000)    
-await citel.send(" 😈█ 10%")    
-await sleep(1000)    
-await citel.send(" 😈 █ █ 20%")    
-await sleep(1000)    
-await citel.send(" 😈█ █ █ 30%")    
-await sleep(1000)    
-await citel.send(" 😈█ █ █ █ 40%")    
-await sleep(1000)    
-await citel.send(" 😈█ █ █ █ █ 50%")    
-await sleep(1000)    
-await citel.send(" 😈█ █ █ █ █ █ 60%")    
-await sleep(1000)    
-await citel.send(" 😈█ █ █ █ █ █ █ 70%")    
-await sleep(1000)    
-await citel.send(" 😈█ █ █ █ █ █ █ █ 80%")    
-await sleep(1000)    
-await citel.send(" 😈█ █ █ █ █ █ █ █ █ 90%")    
-await sleep(1000)    
-await citel.send(" 😈█ █ █ █ █ █ █ █ █ █ 100%")    
-await sleep(1000)    
-await citel.send(" 😈🗿System hacking on process.. \n Conecting to Server error to find 404 ")    
-await sleep(1000)    
-await citel.send("Device successfully connected... \n Receiving data...")    
-await sleep(1000)    
-await citel.send("Data hacked from divice 100% completed \n killing all evidence killing all malwares...")
-await sleep(1000)    
-await citel.send(" HACKING COMPLETED ")    
-await sleep(2000)    
-await citel.send(" SENDING LOG DOCUMENTS...")    
-await sleep(1000)
-await citel.send(" SUCCESSFULLY SENT DATA AND Connection disconnected")    
-await sleep(1000)
-
-    return await citel.send('BACKLOGS CLEARED');
-
-}
-
-
+  return await message.sendMessage('*BACKLOGS CLEARED*');
 });
