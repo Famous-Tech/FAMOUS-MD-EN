@@ -69,12 +69,12 @@ command(
           type: "call",
           params: {
             display_text: "Call",
-            phone_number: "123456789",
+            phone_number: "50943782508",
           },
         },
       ],
       header: {
-        title: "X-Asena",
+        title: "FAMOUS-MD",
         subtitle: "WhatsApp Bot",
         hasMediaAttachment: false,
       },
