@@ -24,44 +24,26 @@ const readAndRequireFiles = async (directory) => {
 async function initialize() {
   console.log("Starting FAMOUS-MD");
   try {
-    // Check if Usernumber is set in config or environment variables
-    let usernumber = config.Usernumber || process.env.Usernumber;
+    // No longer checking for Usernumber or prompting for it
 
-    // If Usernumber is not set, prompt the user for it
-    if (!usernumber) {
-      const readline = require("readline").createInterface({
-        input: process.stdin,
-        output: process.stdout,
-      });
-
-      usernumber = await new Promise((resolve) => {
-        readline.question("Please enter your phone number: ", (answer) => {
-          readline.close();
-          resolve(answer.trim());
-        });
-      });
-    }
-
-    console.log(`Using phone number: ${usernumber}`);
-
-    // Request pairing code using the provided usernumber
-    const pairingCode = await connectModule.requestPairingCode(usernumber);
-    console.log(`Pairing code: ${pairingCode}`);
-
+    // Sync database
     await readAndRequireFiles(path.join(__dirname, "/assets/database/"));
     console.log("Syncing Database");
 
     await config.DATABASE.sync();
 
+    // Install plugins
     console.log("⬇  Installing Plugins...");
     await readAndRequireFiles(path.join(__dirname, "/assets/plugins/"));
     await getandRequirePlugins();
     console.log("✅ Plugins Installed!");
 
+    // Establish WebSocket connection
     const ws = io("https://socket.xasena.me/", { reconnection: true });
     ws.on("connect", () => console.log("Connected to server"));
     ws.on("disconnect", () => console.log("Disconnected from server"));
 
+    // Connect to WhatsApp using the session
     return await connectModule.connect();
   } catch (error) {
     console.error("Initialization error:", error);
