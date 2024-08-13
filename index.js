@@ -2,12 +2,12 @@
 const pino = require("pino");
 const path = require("path");
 const fs = require("fs");
-const plugins = require("./plugins");
-const { PausedChats } = require("../assets/database");
+const plugins = require("./assets/plugins");
+const { PausedChats } = require("./assets/database");
 const util = require("util");
-const config = require("../config");
+const config = require("config");
 const { serialize, Greetings } = require("./index");
-const { Image, Message, Sticker, Video, AllMessage } = require("./Messages");
+const { Image, Message, Sticker, Video, AllMessage } = require("/lib/Messages");
 
 const {
   default: makeWASocket,
