@@ -1,4 +1,5 @@
-const fs = require("fs").promises;
+const fs = require("fs");
+const fsp = require("fs").promises;
 const path = require("path");
 const config = require("./config");
 const connect = require("./lib/connection");
