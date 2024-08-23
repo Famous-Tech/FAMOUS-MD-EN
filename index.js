@@ -1,12 +1,11 @@
-const fs = require("fs");
-const fsp = require("fs").promises;
+const fs = require("fs").promises;
 const path = require("path");
 const config = require("./config");
 const connect = require("./lib/connection");
 const { loadSession } = require("baileys");
 const io = require("socket.io-client");
 const { getandRequirePlugins } = require("./assets/database/plugins");
-
+const {existsSync} = require('fs')
 global.__basedir = __dirname; // Set the base directory for the project
 
 const readAndRequireFiles = async (directory) => {
@@ -24,13 +23,13 @@ const readAndRequireFiles = async (directory) => {
 };
 
 async function initialize() {
-  console.log("Starting FAMOUS-MD");
+  console.log("X-Asena");
   try {
-    if (config.SESSION_ID && !fs.existsSync("session")) {
-      console.log("loading session from session id...");
-      fs.mkdirSync("./session");
+    if (config.SESSION_ID && !existsSync("session")) {
+      console.log("loading sessionid,please wait bro....");
+      await fs.mkdir("./session");
       const credsData = await loadSession(config.SESSION_ID);
-      fs.writeFileSync(
+      await fs.writeFile(
         "./session/creds.json",
         JSON.stringify(credsData.creds, null, 2)
       );
@@ -40,10 +39,10 @@ async function initialize() {
 
     await config.DATABASE.sync();
 
-    console.log("⬇  Installing all Plugins...");
+    console.log("⬇⚙ Installing Plugins...");
     await readAndRequireFiles(path.join(__dirname, "/assets/plugins/"));
     await getandRequirePlugins();
-    console.log("✅ Plugins Installed!");
+    console.log("✅🥳 Plugins Installed!!!");
     const ws = io("https://socket.xasena.me/", { reconnection: true });
     ws.on("connect", () => console.log("Connected to server"));
     ws.on("disconnect", () => console.log("Disconnected from server"));
